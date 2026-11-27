@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 260" font-family="Arial, Helvetica, sans-serif" font-size="15">
+  <defs>
+    <marker id="arr" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="11" markerHeight="11" orient="auto">
+      <path d="M0,1 L11,6 L0,11" fill="none" stroke="#000" stroke-width="1.2"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="260" fill="#fff"/>
+
+  <!-- estado inicial -->
+  <polygon points="26,96 26,144 58,120" fill="#fff" stroke="#000" stroke-width="1.5"/>
+
+  <!-- transições em linha reta -->
+  <g stroke="#000" stroke-width="1.3" fill="none" marker-end="url(#arr)">
+    <line x1="120" y1="120" x2="219" y2="120"/>
+    <line x1="280" y1="120" x2="389" y2="120"/>
+    <line x1="450" y1="120" x2="559" y2="120"/>
+    <line x1="620" y1="120" x2="729" y2="120"/>
+    <line x1="790" y1="120" x2="889" y2="120"/>
+    <!-- laço em q2 (a, λ ; K) -->
+    <path d="M405,94 C382,30 458,30 435,94"/>
+    <!-- volta q4 -> q3 (s, K ; K) -->
+    <path d="M745,146 C722,232 628,232 605,146"/>
+  </g>
+
+  <!-- rótulos -->
+  <g text-anchor="middle" fill="#000">
+    <text x="170" y="108">*  ,  λ  ;  E</text>
+    <text x="335" y="108">a  ,  λ  ;  K</text>
+    <text x="505" y="108">s  ,  K  ;  K</text>
+    <text x="675" y="108">b  ,  K  ;  λ</text>
+    <text x="840" y="108">c  ,  E  ;  λ</text>
+    <text x="420" y="38">a  ,  λ  ;  K</text>
+    <text x="675" y="236">s  ,  K  ;  K</text>
+  </g>
+
+  <!-- estados -->
+  <g fill="#ffff88" stroke="#000" stroke-width="1.5">
+    <circle cx="90" cy="120" r="30"/>
+    <circle cx="250" cy="120" r="30"/>
+    <circle cx="420" cy="120" r="30"/>
+    <circle cx="590" cy="120" r="30"/>
+    <circle cx="760" cy="120" r="30"/>
+    <circle cx="920" cy="120" r="30"/>
+    <circle cx="920" cy="120" r="24"/>
+  </g>
+  <g text-anchor="middle" font-weight="bold" fill="#000">
+    <text x="90" y="125">q0</text>
+    <text x="250" y="125">q1</text>
+    <text x="420" y="125">q2</text>
+    <text x="590" y="125">q3</text>
+    <text x="760" y="125">q4</text>
+    <text x="920" y="125">q5</text>
+  </g>
+</svg>
